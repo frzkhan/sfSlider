@@ -1,6 +1,7 @@
 angular.module('sfSlider', [
   'schemaForm',
-  'templates'
+  'templates',
+  'ui.bootstrap-slider'
 ]).config(function(schemaFormDecoratorsProvider, sfBuilderProvider) {
 
   schemaFormDecoratorsProvider.defineAddOn(

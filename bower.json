@@ -24,9 +24,7 @@
   "devDependencies": {
     "angular-schema-form": "^0.8.13",
     "angular-schema-form-bootstrap": "^0.2.0",
-    "bootstrap": "^3.3.7"
-  },
-  "dependencies": {
+    "bootstrap": "^3.3.7",
     "angular-bootstrap-slider": "^0.1.28"
   }
 }
