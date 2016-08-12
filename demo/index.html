@@ -21,17 +21,21 @@
       angular.module('test', ["schemaForm","sfSlider", "ui.bootstrap-slider"]).controller('FormController', function($scope) {
 
         $scope.schema = {
-  "type": "object",
-  "properties": {
-    "slide": {
-      "type": "string",
-      "title": "Slider",
-      "description": "slide to select",
-    }
-  }
-}
+          "type": "object",
+          "properties": {
+            "slide": {
+              "type": "string",
+              "title": "Slider",
+              "description": "slide to select",
+              "enum":['0','I','II','III','IV']
+            }
+          }
+        }
 
-        $scope.form = [{"type":"sfSlider","key":"slide","keys":[0,1,2,3,4],"values":['0','I','II','III','IV']}]
+        $scope.form = [{
+          "type":"sfSlider",
+          "key":"slide"
+        }]
         $scope.model = {};
 
         $scope.debug = {schema: angular.copy($scope.schema), form: angular.copy($scope.form)};

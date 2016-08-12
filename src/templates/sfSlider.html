@@ -1,15 +1,8 @@
-<div>
-<!-- Surrounding DIV for sfField builder to add a sfField directive to. -->
-
-  <h2>{{form.myOwnFormOption}}</h2>
-  <!-- Create your own form options -->
-
-  <label>{{form.title}}</label>
-  <slider sf-field-model ticks="form.keys" min="form.min" max="form.max" ticks-labels="form.values" tooltip="hide"></slider>
-  <!-- sf-field-model let's the ngModel builder know that you want a ng-model that matches against the form key here -->
-  <!-- schema-validate="form" validates the form against the schema -->
-
-  <span sf-message="form.description"></span>
-  <!-- Description & Validation messages -->
+<div class="form-group {{form.htmlClass}}">
+  <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
+  <slider sf-field-model ticks="form.keys"
+  min="form.min" max="form.max"
+  ticks-labels="form.values" tooltip="hide"></slider>
+  <span class="help-block"  sf-message="form.description"></span>
 
 </div>
