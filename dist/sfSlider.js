@@ -17,7 +17,7 @@ angular.module('sfSlider', [
     options.lookup[sfPathProvider.stringify(options.path)] = f;
     return f;
   };
-  schemaFormProvider.defaults.string.unshift(slider);
+  //schemaFormProvider.defaults.string.unshift(slider);
   schemaFormDecoratorsProvider.defineAddOn(
     'bootstrapDecorator',           // Name of the decorator you want to add to.
     'sfSlider',                      // Form type that should render this add-on
