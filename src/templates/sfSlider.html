@@ -2,6 +2,7 @@
   <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
   <slider ng-model="$$value$$" ticks="form.keys"
   ng-model-options="form.ngModelOptions"
+  sf-changed="form"
   min="form.min" max="form.max"
   ticks-labels="form.values" tooltip="hide"></slider>
   <span class="help-block"  sf-message="form.description"></span>
